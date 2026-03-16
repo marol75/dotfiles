@@ -1,0 +1,145 @@
+{
+    "position": "top",
+    "layer": "top",
+    "height": 18,
+    "modules-left": ["hyprland/workspaces"],
+    "modules-center": ["custom/playerctl"],
+    "modules-right": ["tray", "pulseaudio", "pulseaudio#microphone", "disk", "cpu", "temperature", "memory", "network", "hyprland/language", "battery", "bluetooth", "clock"],
+    // Modules configuration
+	"clock": {
+		"format": "{:%H:%M}",
+		"tooltip": "true",
+        	"tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        	"format-alt": "{:%d/%m}"
+	},
+
+	"hyprland/workspaces": {
+        "disable-scroll": false,
+        "on-scroll-up": "hyprctl dispatch workspace -1",
+        "on-scroll-down": "hyprctl dispatch workspace +1",
+//		"format": "{icon}",
+		"on-click": "activate",
+//		"format-icons": {
+//			"1": "",
+//			"2": "",
+//			"3": "",
+//			"4": "",
+//			"5": "",
+//			"urgent": "",
+//			"active": "",
+//			"default": ""
+		"sort-by-number": true,
+		},
+
+    "custom/playerctl": {
+      "format": "{icon} <span>{}</span>",
+      "return-type": "json",
+      "max-length": 35,
+      "exec": "playerctl -a metadata --format '{\"text\": \"{{artist}} - {{markup_escape(title)}}\", \"tooltip\": \"{{playerName}} : {{markup_escape(title)}}\", \"alt\": \"{{status}}\", \"class\": \"{{status}}\"}' -F",
+      "on-click-middle": "playerctl play-pause",
+      "on-click": "playerctl previous",
+      "on-click-right": "playerctl next",
+      "format-icons": {
+        "Playing": "<span foreground='#B8BB26'> </span>",
+        "Paused": "<span foreground='#928374'> </span>"
+      },
+    },
+	"battery": {
+        "states": {
+            "good": 95,
+            "warning": 30,
+            "critical": 15
+        },
+        "format":"{icon} {capacity}%",
+        "format-charging": "{icon} {capacity}%",
+        "format-plugged": "CONNECTED: {capacity}%",
+        "format-alt": "BAT: {time}",
+        // "format-good": "", // An empty format will hide the module
+        // "format-full": "",
+        "format-icons": ["", "", "", "", ""]
+	},
+	"cpu": {
+	    "interval": 10,
+	    "format": "  {}%",
+	    "max-length": 10
+	},
+	"temperature": {
+        "thermal-zone": 2,
+        "hwmon-path": "/sys/class/hwmon/hwmon1/temp1_input",
+        "critical-threshold": 80,
+        "format-critical": "{icon} {temperatureC}°C",
+        "format": "{icon} {temperatureC}°C",
+        "format-icons": ["", "", ""]
+    },
+ 	 "memory": {
+  		 "interval": 30,
+   		 "format": " {}%",
+   		 "max-length": 10
+	},	
+	"network": {
+        	"format-wifi": "󰤨 {signalStrength}%  {bandwidthUpBytes}  {bandwidthDownBytes}",
+        	"format-ethernet": "{ifname}",
+        	"format-linked": " {ifname} (No IP)",
+        	"format-disconnected": "󰤭 ",
+        	"format-alt": " {ifname}: {ipaddr}/{cidr}",
+          "tooltip-format": "{essid}",
+          "on-click-right": "nm-connection-editor"
+	},
+	"tray": {
+		"icon-size": 12,
+		"spacing": 3
+	},
+
+	"hyprland/language": {
+		"format": "  { }",
+		"format-en": "en",
+		"format-ru": "ru",
+		"format-ua": "ua",
+		"tooltip": false
+	},
+
+	"backlight": {
+         "device": "acpi_video1",
+	"format": "BRT: {percent}%",
+        "format-icons": ["", "", "", "", "", "", "", "", ""],
+	"on-scroll-up":
+	"on-scroll-down":
+	},
+	"disk": {
+		"interval": 60,
+		"format": "  {free}",
+		"tooltip": false
+	},
+	"pulseaudio": {
+		"format": "{icon} {volume}%",
+        	"format-muted": "VOL: N/A",
+		"format-icons": {
+			"default": [" ", "󰖀", "󰕾"]
+		},
+		"on-click": "pamixer -t",
+		"on-click-right": "pavucontrol",
+    "tooltip-format": "{volume}%"
+  },
+	"pulseaudio#microphone": {
+        "format": "{format_source}",
+        "format-source": " {volume}%",
+        "format-source-muted": "Muted",
+        "on-click": "pamixer --default-source -t",
+        "on-scroll-up": "pamixer --default-source -i 5",
+        "on-scroll-down": "pamixer --default-source -d 5",
+        "scroll-step": 5
+        }
+    },
+	"bluetooth": {
+      "format": "",
+      "format-disabled": "󰂲", // an empty format will hide the module
+      "format-connected": "{num_connections}",
+      "tooltip-format": "{device_enumerate}",
+      "tooltip-format-enumerate-connected": "{device_alias}   {device_address}"
+    },
+  "custom/randwall": {
+    "format": "WALL",
+    "on-click": "bash $HOME/.config/hypr/randwall.sh",
+    "on-click-right": "bash $HOME/.config/hypr/wall.sh"
+  }
+}
