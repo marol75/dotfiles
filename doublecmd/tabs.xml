@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doublecmd>
+  <Tabs>
+    <OpenedTabs>
+      <Left>
+        <ActiveTab>0</ActiveTab>
+        <Tab>
+          <FileView Type="columns">
+            <Sortings>
+              <Sorting>
+                <Direction>1</Direction>
+                <Function>12</Function>
+              </Sorting>
+            </Sortings>
+            <History>
+              <Entry Active="True">
+                <FileSource Type="FileSystem"/>
+                <Paths>
+                  <Path Filename="..">/nix/store/p7spbfhmgcvwlxxjv612szznlwn1sc16-doublecmd-1.2.1/lib/doublecmd/</Path>
+                  <Path Filename="..">/nix/store/p7spbfhmgcvwlxxjv612szznlwn1sc16-doublecmd-1.2.1/lib/</Path>
+                  <Path Filename="..">/nix/store/p7spbfhmgcvwlxxjv612szznlwn1sc16-doublecmd-1.2.1/</Path>
+                  <Path Filename="..">/nix/store/</Path>
+                  <Path Filename="..">/nix/</Path>
+                  <Path Filename="home">/</Path>
+                  <Path Filename="marol">/home/</Path>
+                  <Path Filename="Downloads">/home/marol/</Path>
+                  <Path Filename="..">/home/marol/Downloads/</Path>
+                  <Path Filename="Documents">/home/marol/</Path>
+                  <Path Filename="..">/home/marol/Documents/</Path>
+                  <Path Filename="Downloads">/home/marol/</Path>
+                  <Path Filename="..">/home/marol/Downloads/</Path>
+                  <Path Filename="configs">/home/marol/</Path>
+                  <Path Filename="i3">/home/marol/configs/</Path>
+                  <Path Filename="..">/home/marol/configs/i3/</Path>
+                  <Path Filename="polybar">/home/marol/configs/</Path>
+                  <Path Filename="..">/home/marol/configs/polybar/</Path>
+                  <Path Filename="..">/home/marol/configs/</Path>
+                  <Path Filename="configs">/home/marol/</Path>
+                  <Path Filename=".config">/home/marol/configs/</Path>
+                  <Path Filename="polybar">/home/marol/configs/.config/</Path>
+                  <Path Filename="..">/home/marol/configs/.config/polybar/</Path>
+                  <Path Filename="i3">/home/marol/configs/.config/</Path>
+                  <Path Filename="..">/home/marol/configs/.config/i3/</Path>
+                  <Path Filename="..">/home/marol/configs/.config/</Path>
+                  <Path Filename="i3">/home/marol/configs/</Path>
+                  <Path Filename="..">/home/marol/configs/i3/</Path>
+                  <Path Filename="polybar">/home/marol/configs/</Path>
+                  <Path Filename="..">/home/marol/configs/polybar/</Path>
+                  <Path Filename=".config">/home/marol/configs/</Path>
+                  <Path Filename="polybar">/home/marol/configs/.config/</Path>
+                  <Path Filename="..">/home/marol/configs/.config/polybar/</Path>
+                  <Path Filename="..">/home/marol/configs/.config/</Path>
+                  <Path Filename=".config">/home/marol/configs/</Path>
+                  <Path Filename="doublecmd">/home/marol/configs/.config/</Path>
+                  <Path Filename="..">/home/marol/configs/.config/doublecmd/</Path>
+                  <Path Filename="..">/home/marol/configs/.config/</Path>
+                  <Path Filename="..">/home/marol/configs/</Path>
+                  <Path Filename="Downloads">/home/marol/</Path>
+                  <Path Filename="..">/home/marol/Downloads/</Path>
+                  <Path Filename="configs">/home/marol/</Path>
+                  <Path Filename=".config">/home/marol/configs/</Path>
+                  <Path Filename="doublecmd">/home/marol/configs/.config/</Path>
+                  <Path Filename="multiarc.ini">/home/marol/configs/.config/doublecmd/</Path>
+                </Paths>
+              </Entry>
+            </History>
+            <ColumnsView>
+              <ColumnsSet>Default</ColumnsSet>
+            </ColumnsView>
+          </FileView>
+        </Tab>
+      </Left>
+      <Right>
+        <ActiveTab>0</ActiveTab>
+        <Tab>
+          <FileView Type="columns">
+            <Sortings>
+              <Sorting>
+                <Direction>1</Direction>
+                <Function>12</Function>
+              </Sorting>
+            </Sortings>
+            <History>
+              <Entry Active="True">
+                <FileSource Type="FileSystem"/>
+                <Paths>
+                  <Path Filename="..">/nix/store/p7spbfhmgcvwlxxjv612szznlwn1sc16-doublecmd-1.2.1/lib/doublecmd/</Path>
+                  <Path Filename="Documents">/cryptdisk/</Path>
+                  <Path Filename="..">/cryptdisk/Documents/</Path>
+                  <Path Filename="Downloads">/cryptdisk/</Path>
+                  <Path Filename="..">/cryptdisk/Downloads/</Path>
+                  <Path Filename="configs">/cryptdisk/</Path>
+                  <Path Filename="..">/cryptdisk/configs/</Path>
+                  <Path Filename="rofi">/cryptdisk/</Path>
+                  <Path Filename="..">/cryptdisk/rofi/</Path>
+                  <Path Filename="Music">/cryptdisk/</Path>
+                  <Path Filename="..">/cryptdisk/Music/</Path>
+                  <Path Filename="Templates">/cryptdisk/</Path>
+                  <Path Filename="..">/cryptdisk/Templates/</Path>
+                  <Path Filename="..">/cryptdisk/</Path>
+                  <Path Filename="..">/nix/</Path>
+                  <Path Filename="home">/</Path>
+                  <Path Filename="marol">/home/</Path>
+                  <Path Filename="..">/home/marol/</Path>
+                  <Path Filename="..">/home/</Path>
+                  <Path Filename="home">/</Path>
+                  <Path Filename="marol">/home/</Path>
+                  <Path Filename=".config">/home/marol/</Path>
+                  <Path Filename="i3">/home/marol/.config/</Path>
+                  <Path Filename="i3">/home/marol/.config/i3/</Path>
+                  <Path Filename="..">/home/marol/.config/i3/i3/</Path>
+                  <Path Filename="..">/home/marol/.config/i3/</Path>
+                  <Path Filename="i3">/home/marol/.config/</Path>
+                  <Path Filename="..">/home/marol/.config/i3/</Path>
+                  <Path Filename="polybar">/home/marol/.config/</Path>
+                  <Path Filename="..">/home/marol/.config/polybar/</Path>
+                  <Path Filename="doublecmd">/home/marol/.config/</Path>
+                  <Path Filename="..">/home/marol/.config/doublecmd/</Path>
+                  <Path Filename="doublecmd">/home/marol/.config/</Path>
+                  <Path Filename="doublecmd.cfg">/home/marol/.config/doublecmd/</Path>
+                </Paths>
+              </Entry>
+            </History>
+            <ColumnsView>
+              <ColumnsSet>Default</ColumnsSet>
+            </ColumnsView>
+          </FileView>
+        </Tab>
+      </Right>
+    </OpenedTabs>
+  </Tabs>
+</doublecmd>
